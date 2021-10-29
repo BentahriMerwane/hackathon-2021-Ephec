@@ -4,19 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/nav_login"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="255dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="HE201939@students.ephec.be"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <EditText
+        android:id="@+id/text_input_password_toggle"
+        android:layout_width="255dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="********"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:backgroundTint="@color/ephec"
+        android:text="Connexion"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EPHEC-Foods"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/ephec"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="147dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
