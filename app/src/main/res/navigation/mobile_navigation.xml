@@ -7,24 +7,24 @@
 
     <fragment
         android:id="@+id/nav_login"
-        android:name="com.example.myapplication.ui.home.HomeFragment"
+        android:name="com.example.myapplication.ui.login.LoginFragment"
         android:label="@string/login"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_login" />
 
     <fragment
         android:id="@+id/nav_commandes"
         android:name="com.example.myapplication.ui.commande.CommandeFragment"
         android:label="@string/commandes"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_commandes" />
 
     <fragment
         android:id="@+id/nav_param"
-        android:name="com.example.myapplication.ui.slideshow.SlideshowFragment"
+        android:name="com.example.myapplication.ui.parametres.ParametresFragment"
         android:label="@string/param"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_parametres" />
     <fragment
         android:id="@+id/nav_repas"
-        android:name="com.example.myapplication.ui.slideshow.SlideshowFragment"
+        android:name="com.example.myapplication.ui.parametres.ParametresFragment"
         android:label="@string/repas"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_parametres" />
 </navigation>
