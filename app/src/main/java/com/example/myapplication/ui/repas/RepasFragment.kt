@@ -8,9 +8,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentRepasBinding
-import com.example.myapplication.ui.gallery.RepasViewModel
+import com.example.myapplication.ui.commande.RepasViewModel
 
 class RepasFragment : Fragment() {
 
