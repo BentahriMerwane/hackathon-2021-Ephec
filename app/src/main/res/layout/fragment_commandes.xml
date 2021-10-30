@@ -19,4 +19,56 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_commandes"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <CheckBox
+            android:id="@+id/lundi"
+            android:text="@string/lundi" />
+
+        <CheckBox
+            android:id="@+id/mardi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mardi" />
+
+        <CheckBox
+            android:id="@+id/mercredi"
+            android:text="@string/mercredi" />
+
+        <CheckBox
+            android:id="@+id/jeudi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jeudi" />
+
+        <CheckBox
+            android:id="@+id/vendredi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vendredi" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="36dp"
+        android:text="suivant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="340dp"
+        android:layout_height="52dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="88dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
