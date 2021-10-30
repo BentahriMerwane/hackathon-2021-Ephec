@@ -3,6 +3,10 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -32,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarMain.toolbar)
 
         binding.appBarMain.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Un problème n'hésiter pas à contacter l'équipe Ephec Food", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout
@@ -47,6 +51,23 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+        val button_sign = findViewById<Button>(R.id.button_sign)
+        button_sign.setOnClickListener{
+
+            // edit text login
+
+            val editTextEmail = findViewById<EditText>(R.id.editTextTextEmailAddress).text.toString()
+            val editTextPassword = findViewById<EditText>(R.id.text_input_password_toggle).text.toString()
+
+            val textview_user = findViewById<TextView>(R.id.textView_users)
+            textview_user.setText("EMAIL  : $editTextEmail")
+
+            Toast.makeText(this ,"La connexion est accepté pour l'email" + editTextEmail, Toast.LENGTH_LONG).show();
+
+
+
+        }
+
     }
 
 
