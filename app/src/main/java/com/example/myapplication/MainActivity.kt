@@ -1,6 +1,10 @@
 package com.example.myapplication
 
+
+import android.annotation.SuppressLint
+
 import android.content.Intent
+
 import android.os.Bundle
 import android.view.Menu
 import android.widget.Button
@@ -25,6 +29,10 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+
+
+    @SuppressLint("SetTextI18n")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -37,6 +45,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.appBarMain.fab.setOnClickListener { view ->
             Snackbar.make(view, "Un problème n'hésiter pas à contacter l'équipe Ephec Food", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Problème avec l'application , contacter le service : ephecfood@students.ephec.be", Snackbar.LENGTH_LONG)
+
                 .setAction("Action", null).show()
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout
@@ -51,6 +61,7 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
         val button_sign = findViewById<Button>(R.id.button_sign)
         button_sign.setOnClickListener{
 
@@ -63,8 +74,6 @@ class MainActivity : AppCompatActivity() {
             textview_user.setText("EMAIL  : $editTextEmail")
 
             Toast.makeText(this ,"La connexion est accepté pour l'email" + editTextEmail, Toast.LENGTH_LONG).show();
-
-
 
         }
 
