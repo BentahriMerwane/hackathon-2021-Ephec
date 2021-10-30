@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
         android:layout_marginEnd="127dp"
-        android:text="semaine suivante"
+        android:text="@string/repas"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

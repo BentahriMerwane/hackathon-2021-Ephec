@@ -19,46 +19,40 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="409dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_commandes"
+        app:layout_constraintEnd_toEndOf="parent">
 
 
         <CheckBox
             android:id="@+id/lundi"
-            android:text="Lundi"
-            android:translationX="50dp" />
+            android:text="@string/lundi" />
 
         <CheckBox
             android:id="@+id/mardi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mardi"
-            android:translationX="50dp" />
+            android:text="@string/mardi" />
 
         <CheckBox
             android:id="@+id/mercredi"
-            android:text="Mercredi"
-            android:translationX="50dp" />
+            android:text="@string/mercredi" />
 
         <CheckBox
             android:id="@+id/jeudi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Jeudi"
-            android:translationX="50dp" />
+            android:text="@string/jeudi" />
 
         <CheckBox
             android:id="@+id/vendredi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Vendredi"
-            android:translationX="50dp" />
+            android:text="@string/vendredi" />
     </TableLayout>
 
     <Button
