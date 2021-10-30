@@ -1,6 +1,10 @@
 package com.example.myapplication
 
+
 import android.annotation.SuppressLint
+
+import android.content.Intent
+
 import android.os.Bundle
 import android.view.Menu
 import android.widget.Button
@@ -16,16 +20,23 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentManager
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.ui.login.LoginFragment
+import com.example.myapplication.ui.repas.RepasFragment
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
+
     @SuppressLint("SetTextI18n")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -71,6 +82,7 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.

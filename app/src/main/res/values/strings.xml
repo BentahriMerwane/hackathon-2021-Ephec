@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Food-Healthphec</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -10,7 +10,13 @@
     <string name="login">Login</string>
     <string name="commandes">Commandes</string>
     <string name="param">Paramètres</string>
-    <string name="repas">Repas</string>
+    <string name="repas">Mes Repas</string>
+    <string name="lundi">lundi</string>
+    <string name="mardi">mardi</string>
+    <string name="mercredi">mercredi</string>
+    <string name="jeudi">jeudi</string>
+    <string name="vendredi">vendredi</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
