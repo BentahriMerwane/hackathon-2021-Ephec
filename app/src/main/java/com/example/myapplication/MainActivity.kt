@@ -44,7 +44,9 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarMain.toolbar)
 
         binding.appBarMain.fab.setOnClickListener { view ->
+            Snackbar.make(view, "Un problème n'hésiter pas à contacter l'équipe Ephec Food", Snackbar.LENGTH_LONG)
             Snackbar.make(view, "Problème avec l'application , contacter le service : ephecfood@students.ephec.be", Snackbar.LENGTH_LONG)
+
                 .setAction("Action", null).show()
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout
@@ -73,13 +75,7 @@ class MainActivity : AppCompatActivity() {
 
             Toast.makeText(this ,"La connexion est accepté pour l'email" + editTextEmail, Toast.LENGTH_LONG).show();
 
-
-
         }
-
-
-
-
 
     }
 
