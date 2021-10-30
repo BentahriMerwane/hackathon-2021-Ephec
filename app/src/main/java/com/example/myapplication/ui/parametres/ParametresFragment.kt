@@ -30,7 +30,7 @@ class ParametresFragment : Fragment() {
         _binding = FragmentParametresBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.navParam
+        val textView: TextView = binding.navRepas
         parametreViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
