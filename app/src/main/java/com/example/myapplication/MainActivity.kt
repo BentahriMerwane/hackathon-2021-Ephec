@@ -1,9 +1,11 @@
 package com.example.myapplication
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.Menu
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -21,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -30,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarMain.toolbar)
 
         binding.appBarMain.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Problème de connexion , contacter le service : ephecfood@students.ephec.be", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Problème avec l'application , contacter le service : ephecfood@students.ephec.be", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout
@@ -54,7 +57,11 @@ class MainActivity : AppCompatActivity() {
             val editTextEmail = findViewById<EditText>(R.id.editTextTextEmailAddress).text.toString()
             val editTextPassword = findViewById<EditText>(R.id.text_input_password_toggle).text.toString()
 
+            val textview_user = findViewById<TextView>(R.id.textView_users)
+            textview_user.setText("EMAIL  : $editTextEmail")
+
             Toast.makeText(this ,"La connexion est accepté pour l'email" + editTextEmail, Toast.LENGTH_LONG).show();
+
 
 
         }
