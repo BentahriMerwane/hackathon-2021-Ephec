@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Food-Healthphec</string>
+    <string name="app_name">Ephec-Food</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -9,7 +9,7 @@
     <string name="login">Login</string>
     <string name="commandes">Commandes</string>
     <string name="param">Paramètres</string>
-    <string name="repas">Mes Repas</string>
+    <string name="repas">Mes repas</string>
     <string name="lundi">lundi</string>
     <string name="mardi">mardi</string>
     <string name="mercredi">mercredi</string>

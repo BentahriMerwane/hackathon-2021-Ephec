@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class LoginViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "EPHEC-Foods"
+        value = "EPHEC-Food"
     }
     val text: LiveData<String> = _text
 }

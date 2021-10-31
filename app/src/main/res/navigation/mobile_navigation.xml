@@ -25,6 +25,6 @@
     <fragment
         android:id="@+id/nav_choix"
         android:name="com.example.myapplication.ui.choix.ChoixFragment"
-        android:label="Mes Choix"
+        android:label="Mes choix"
         tools:layout="@layout/fragment_choix" />
 </navigation>
