@@ -1,161 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.choix.ChoixFragment">
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="34dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="106dp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <TextView
-        android:id="@+id/choix"
-        android:layout_width="match_parent"
+        android:id="@+id/nav_choix"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="152dp"
-        android:text="Repas disponible pour Mercredi"
+        android:layout_marginBottom="167dp"
+
+        android:text="Repas disponible pour :  Mercredi"
         android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="39dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginBottom="246dp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/choix" />
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="351dp"
+        android:layout_height="309dp"
+        app:flow_verticalAlign="bottom"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="211dp">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="63dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="55dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toTopOf="@+id/choix">
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="106dp"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox"
+            app:layout_constraintVertical_bias="1.0" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="73dp"
-            android:src="@drawable/lasagne_vegi" />
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="370dp"
+            android:layout_height="239dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical"
+            android:translationX="10dp"
+            android:translationY="-110dp">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lasagne vegan bio"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:src="@drawable/quiches" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="106dp"
-            android:text="Ingrédients : \n Eau, pâte à lasagne cuite 21 % (semoule de BLE dur*, eau), concentre de tomates* 17 %, viande de bœuf* (origine : France) 14 %, oignons* 6 %, CREME fraiche*, EMMENTAL 2 %*, amidon de maïs, huile de colza*, sel" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="Quiches (Champignon,Loraine ,Epinard ) + Salade"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fournisseur : Les Filles LLN"
-            android:textColor="@color/ephec" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:text="Ingrédients : pâte brisée, 20 g de beurre,100 g de fromage de chèvre frais, 2 oeufs,20 cl de crème liquide légère,20 cl de lait,sel et poivre
+                \nAllergènes : gluten,oeufs,lactose,noix,moutarde . " />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Prix : 7€"
-            android:textColor="@color/purple_200" />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:text="Fournisseur : Farm LLN"
+                android:textColor="@color/ephec"
+                android:translationY="-30dp" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:text="Prix : 7€"
+                android:textColor="@color/purple_200"
+                android:translationY="-30dp" />
+        </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="245dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="18dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkBox2">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="73dp"
-            android:src="@drawable/quiches" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Quiches (Champignon,Loraine ,Epinard ) + Salade"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/black"
-            android:textSize="@dimen/activity_horizontal_margin"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
-            android:layout_height="96dp"
-            android:text="Ingrédients : pâte brisée, 20 g de beurre,100 g de fromage de chèvre frais, 2 oeufs,20 cl de crème liquide légère,20 cl de lait,sel et poivre
-            \nAllergènes : gluten,oeufs,lactose,noix,moutarde . " />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fournisseur : Farm LLN"
-            android:textColor="@color/ephec" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="22dp"
-            android:text="Prix : 7€"
-            android:textColor="@color/purple_200" />
-    </LinearLayout>
+    </TableLayout>
 
     <Button
         android:id="@+id/button3"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="37dp"
         android:text="Valider mon choix"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+        app:rippleColor="#FF5722" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

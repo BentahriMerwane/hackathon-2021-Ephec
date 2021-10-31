@@ -10,8 +10,6 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.databinding.FragmentChoixBinding
 
-
-
 class ChoixFragment : Fragment() {
 
     private lateinit var choixViewModel: ChoixViewModel
@@ -32,7 +30,7 @@ class ChoixFragment : Fragment() {
         _binding = FragmentChoixBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.choix
+        val textView: TextView = binding.navChoix
         choixViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })

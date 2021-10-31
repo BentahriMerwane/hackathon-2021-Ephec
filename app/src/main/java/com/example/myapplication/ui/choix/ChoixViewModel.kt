@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class ChoixViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is choix Fragment"
+        value = "votre commande de la semaine"
     }
     val text: LiveData<String> = _text
 }
